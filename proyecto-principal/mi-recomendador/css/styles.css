@@ -1,0 +1,31 @@
+/* Estilos personalizados para el recomendador */
+.card {
+    background: rgb(5, 5, 5);
+    border-radius: 15px;
+    overflow: hidden; /* Oculta lo que sobresale (esquinas redondeadas) */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    max-width: 300px; /* Tamaño máximo de cada card 
+    margin: 0 auto;   /* Centra la card */
+}
+
+.card img {
+    width: 100%;       /* Ocupa todo el ancho de la card */
+    height: auto;      /* Mantiene la proporción */
+    display: block;    /* Quita el espacio extra debajo de la imagen */
+}
+
+.card p{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    font-style: italic;
+}
+
+.subtittle{
+    text-align: center;
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    font-weight: 100;
+}

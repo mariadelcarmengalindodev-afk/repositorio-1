@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+
+        /* Fondo y fuente general */
+        body {
+            font-family: Arial, sans-serif;
+            background: #1a1a2e;
+            color: white;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        /* Título principal */
+        h1 {
+            text-align: center;
+            color: #ff6b6b;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #a8a8b3;
+            margin-bottom: 30px;
+        }
+        
+        /* 
+           Contenedor de las card
+        */
+        .cards-container {
+            display: flex;           
+            flex-wrap: wrap;        
+            gap: 20px;              
+            justify-content: center; 
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        /* 
+           Estilo de cada card
+        */
+        .card {
+            background: rgb(30, 30, 50);
+            border-radius: 10px;
+            overflow: hidden;
+            width: 250px;           
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        /* Imagen dentro de la card */
+        .card img {
+            width: 100%;           
+            height: 180px;         
+            object-fit: cover; 
+            display: block;
+        }
+        
+        /* Contenido de la card */
+        .card-body {
+            padding: 15px;
+        }
+        
+        .card-body h3 {
+            color: #ff6b6b;
+            margin: 0 0 10px 0;
+            font-size: 1.1em;
+        }
+        
+        .card-body p {
+            color: #c8c8d8;
+            font-size: 0.9em;
+            line-height: 1.5;
+            margin: 0 0 15px 0;
+        }
+        
+        /* Botón */
+        .card-button {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+        
+        .card-button:hover {
+            background: #ee5a24;
+        }
+        
+        /* Pie de página */
+        .footer {
+            text-align: center;
+            color: #666;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1> Cartelera</h1>
+    <p class="subtitle">Las películas que te recomiendo</p>
+     <div class="cards-container">
+        <!--Card 1-->
+        <div class="card">
+            <img src="img/wrongTurn.webp">
+            <div class="card-body">
+                <h3>Wrong Turn</h3>
+                <p>La premisa original sigue a grupos de jóvenes que,debido a accidentes o malas decisiones, terminan perdidos en los bosques 
+                   de Virginia Occidental. Allí son cazados por familias de caníbales deformes
+                   y endogámicos, quienes utilizan trampas primitivas y violencia extrema para capturar a sus víctimas.
+                </p>
+                <a href="#" class="card-button">Puedes verla en:</a>
+            </div>
+        </div>
+
+    <div class="card">
+            <img src="img/masacreTexas.webp">
+            <div class="card-body">
+                <h3>Masacre en Texas</h3>
+            <p>La trama sigue a un grupo de cinco jóvenes que, en su viaje por el campo de Texas,
+               se ven perseguidos y amenazados por una familia caníbal psicópata, liderada por el
+               icónico villano Leatherface (interpretado por Gunnar Hansen), quien utiliza una máscara
+               hecha de piel humana y una motosierra.</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+            </div>
+    </div>
+
+    <div class="card">
+        <img src="img/JeeersCreepers.webp">
+        <div class="card-body">
+             <h3>Jeepers Creepers</h3>
+            <p>Jeepers Creepers es una película de terror de 2001 escrita y dirigida por 
+            Victor Salva.  Producida por Francis Ford Coppola, la trama sigue a los hermanos
+             Trish (Gina Philips) y Darry (Justin Long), quienes son perseguidos por 
+             una criatura demoníaca conocida como The Creeper mientras viajan por una 
+             carretera solitaria en Florida></p>
+            <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+           
+    </div>
+
+    <div class="card">
+        <img src="img/titere.webp">
+        <div class="card-body">
+            <h3>El titere</h3>
+            <p>La trama sigue a Jamie Ashen, quien regresa a su pueblo natal,
+               Ravens Fair, tras el asesinato brutal de su esposa, Lisa,
+               quien aparece sin lengua.  Allí descubre la oscura leyenda urbana sobre Mary Shaw,
+               una ventrílocua del siglo XIX linchada por el pueblo, cuyo espíritu parece
+               vengarse a través de sus 101 muñecos, bajo la regla de que
+               "nunca debes gritar si la ves".2007</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="img/el-tren-de-la-medianoche.webp">
+        <div class="card-body">
+            <h3>Tren de Media Noche</h3>
+            <p>Película de terror y gore dirigida por Ryuhei Kitamura. La trama sigue a Leon Kauffman, 
+               un fotógrafo obsesionado con capturar la oscuridad humana, quien investiga a un
+               asesino en serie conocido como Mahogany que mata y descuartiza a los pasajeros
+               en el metro de Nueva York.2008</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/constantine.webp">
+        <div class="card-body">
+            <h3>Constantine Fantasia Oscura</h3>
+            <p>Nacido con la capacidad no deseada de ver a los ángeles y demonios híbridos que caminan
+                 entre los humanos, Constantine busca la salvación enviando a los esbirros de Lucifer 
+                 de vuelta al averno</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/10.webp">
+        <div class="card-body">
+            <h3>10 cosas que odio de ti</h3>
+            <p>La trama sigue a las hermanas Bianca y Kat Stratford.
+                 Bianca, la hermana menor, es popular y quiere salir con chicos,
+                  pero su padre estricto prohíbe que tenga citas hasta que Kat, la hermana mayor 
+                  y de mal genio, también tenga una</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/pesadas.webp">
+        <div class="card-body">
+            <h3>Chicas pesadas</h3>
+            <p>La trama sigue a Cady Heron, una joven de 15 años que creció en África
+                 siendo educada en casa por sus padres zoólogos.  Al mudarse a Illinois,
+                  EE. UU., Cady debe enfrentarse a la "jungla" de una escuela pública estadounidense.</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/la_casa_del_lago.webp">
+        <div class="card-body">
+            <h3>La casa del lago</h3>
+            <p>Dra. Kate Forster, quien en 2006 deja una misteriosa casa junto a un lago para mudarse a Chicago.
+               Antes de irse, deja una nota en el buzón para el siguiente inquilino. Quien recoge la carta es
+                Alex Wyler,que vive en la misma casa, pero en el año 2004.A través de cartas intercambiadas
+                 en el buzón, ambos descubren que están separados por dos años en el tiempo.</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/paseo.webp">
+        <div class="card-body">
+            <h3>Un paseo por las nubes</h3>
+            <p>Un veterano de la Segunda Guerra Mundial que regresa a casa desilusionado de su matrimonio.
+               En un autobús, conoce a Victoria Aragón,una joven embarazada y soltera que teme el rechazo
+                de su familia,Paul acepta hacerse pasar por su esposo para ayudarla a enfrentar a su familia. </p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/">
+        <div class="card-body">
+            <h3>Una chica fuera de serie</h3>
+            <p>Un joven ambicioso y ordenado que tiene su vida perfectamente planeada.
+               Su rutina cambia drásticamente cuando conoce a Jordan Roark, una chica hermosa pero impredecible,
+                volátil y "fuera de serie" </p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+<div class="card">
+        <img src="img/joe.webp">
+        <div class="card-body">
+            <h3>¿Conoces a Joe Black?</h3>
+            <p>William Parrish, un poderoso y respetado magnate de los medios que, días antes de cumplir 65 años,
+                recibe la visita de la Muerte. Esta se ha personificado en el cuerpo de un joven apuesto
+                que falleció recientemente en una cafetería. </p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+<div class="card">
+        <img src="img/watch.webp">
+        <div class="card-body">
+            <h3>Watchmen Fantasia Oscura</h3>
+            <p>Adaptación del cómic de Alan Moore y Dave Gibbons tiene un tono oscuro,
+                 la exploración de la moralidad, la violencia gráfica y un mundo donde
+                  los "superhéroes" son personas reales con consecuencias reales. </p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/blade.webp">
+        <div class="card-body">
+            <h3>Blade Fantasia Oscura</h3>
+            <p>Blade un vampiro cazador de vampiros que es mitad humano, mitad criatura,
+                 con un sentido del humor ácido y una habilidad excepcional para el combate
+                  contra demonios y criaturas de la noche</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/hell.webp">
+        <div class="card-body">
+            <h3>HellBoy Fantasia Oscura</h3>
+            <p>Un demonio criado por humanos que trabaja para el gobierno de EE. UU.
+                 protegiendo al mundo de amenazas sobrenaturales.</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/crow.webp">
+        <div class="card-body">
+            <h3>The Crow Fantasia Oscura</h3>
+            <p>un músico resucitado por un cuervo para vengarse de los mafiosos que mataron a él y a su novia.
+                Toca el tema de la muerte, el más allá, el dolor emocional y una estética visual muy estilizada y oscura.</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/wick.webp">
+        <div class="card-body">
+            <h3>Jhon Wick Accion</h3>
+            <p>Un asesino retirado que es obligado a volver a la acción tras la muerte de su perro
+                 y el robo de su auto. Comparte el tono de "mundo oculto dentro del mundo real" y 
+                 el protagonista con un pasado traumático</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/the-punisher.webp">
+        <div class="card-body">
+            <h3>The Punisher Accion</h3>
+            <p>Un agente del FBI cuya familia es masacrada por un capo de la mafia como venganza. 
+                Sobreviviendo milagrosamente, Castle renace como El Castigador,
+                 un justiciero implacable que declara la guerra al crimen organizado utilizando tácticas letales.</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/quinto.webp">
+        <div class="card-body">
+            <h3>El Quinto Elemento Accion</h3>
+            <p>La trama se sitúa en el siglo XXIII (año 2263), donde una gran bola de fuego maligna se dirige hacia la Tierra
+               para destruir la vida. La única esperanza reside en cinco piedras elementales y un "quinto elemento" 
+               humano perfecto</p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+        <img src="img/terminator.webp">
+        <div class="card-body">
+            <h3>Terminator Accion</h3>
+            <p>Sarah Connors y su hijo John, el futuro salvador de la humanidad, 
+               quienes son protegidos por Terminators reprogramados mientras luchan por evitar el "Juicio Final" </p>
+               <a href="#" class="card-boton">Puedes verla en:</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+        <p>© 2026 - Mi primera página con GitHub</p>
+</div>
+
+</body>
+</html>
